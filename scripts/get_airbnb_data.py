@@ -3,7 +3,7 @@ import os
 import requests
 import shutil 
 
-listings_url = "https://data.insideairbnb.com/australia/qld/sunshine-coast/2025-05-31/data/listings.csv.gz"
+listings_url = "https://data.insideairbnb.com/australia/nsw/sydney/2025-06-10/data/listings.csv.gz"
 data_path = r"C:\Users\Gordon Li\Desktop\AirPrice\AirPrice\data"
 
 response = requests.get(listings_url)
@@ -20,4 +20,7 @@ if response.status_code == 200:
     print("Extraction complete")
 else: 
     print(f"Failed to download. Status code {response.status_code}")
+    
+    
+    
     
